@@ -17,6 +17,22 @@ console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 ***********************************************************************/
 
 // your code here!
+let interrupter = (interruptingWord) => {
+  return (string) => {
+    let words = string.split(" ");
+    for (let i = 0; i < words.length; i++) {
+      if (i + 1 % 2 != 1) {
+        words[i] = interruptingWord + " " + words[i];
+      }
+    }
+    return words.join(" ");
+  }
+}
+let rudePerson = interrupter("what");
+console.log(rudePerson("how are you"));
+console.log(rudePerson("I like pie"));
+let rudePerson2 = interrupter("yo");
+console.log(rudePerson2("I love dogs"));
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

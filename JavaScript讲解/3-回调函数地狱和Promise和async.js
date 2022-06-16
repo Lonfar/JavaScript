@@ -50,11 +50,7 @@ function DrinkWater() {
     )
 }
 function Eat() {
-    return new Promise(
-        function (resolve) {
-            resolve("吃饭");
-        }
-    )
+    console.log("吃饭")
 }
 function Walk() {
     return new Promise(
@@ -102,7 +98,7 @@ function Bathe() {
 /*利用Promise写还是有一些复杂，所以我们可以更改为async进行写代码*/
 async function main() {
     console.log(await DrinkWater())
-    console.log(await Eat())
+    Eat()
     console.log(await Walk())
     console.log(await WatchTV())
     console.log(await Bathe())

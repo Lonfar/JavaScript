@@ -18,6 +18,19 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 ***********************************************************************/
 
 // your code here!
+let sandwichMaker = () => {
+  let ingredients = ["tomato"];
+  return (ingredient) => {
+    ingredients.push(ingredient);
+    return `One sandwich with ${ingredients.join(" and ")}`;
+  }
+}
+let sandwich = sandwichMaker();
+console.log(sandwich("spinach"));
+console.log(sandwich("jelly"));
+console.log(sandwich("bread"));
+let sandwich2 = sandwichMaker();
+console.log(sandwich2("pb"));
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

@@ -16,6 +16,18 @@ hidden2(); // returns 1
 ***********************************************************************/
 
 // your code here!
+let hiddenCounter = () => {
+  let count = 0;
+  return () => {
+    count++;
+    return count;
+  }
+}
+let hidden1 = hiddenCounter();
+console.log(hidden1());
+console.log(hidden1());
+let hidden2 = hiddenCounter();
+console.log(hidden2());
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
