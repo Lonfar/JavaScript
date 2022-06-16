@@ -26,6 +26,7 @@ console.log(table2(75)); // STILL prints 6
 
 // your code here
 
+
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
